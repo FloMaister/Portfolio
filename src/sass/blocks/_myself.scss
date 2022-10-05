@@ -1,0 +1,76 @@
+.myself {
+    min-height: 720px;
+    padding-top: 120px;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: 400px 600px;
+        grid-template-rows: 280px 280px;
+        column-gap: 70px;
+        row-gap: 40px;
+    }
+    &__photo {
+        grid-column: 0 / 1;
+        grid-row: 0 / 3;
+    }
+    &__aboutme {
+        &__title {
+            position: relative;
+            font-weight: 700;
+            padding-left: 10px;
+            @include before_circle;
+            }
+        &__name {
+            padding-top: 6px;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 60px;
+        }
+        &__divider {
+            width: 60px;
+            border: 2px solid #FFA501;
+            background-color: $main-color;
+        }
+        &__descr {
+            padding-top: 20px;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+        }
+    }
+    &__possibilities {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        &__wrapper {
+            display: grid;
+            grid-template-columns: 260px 260px;
+            grid-template-rows: 120px 120px;
+            column-gap: 70px;
+            row-gap: 20px;
+        }
+        &__web {
+            position: relative;
+        }
+        &__icon {
+            position: absolute;
+            @include before_circle;
+            img {
+                transform: translate(60%, 25%);
+            }
+        }
+        &__title {
+            padding-left: 60px;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 21px;
+        }
+        &__descr {
+            padding-left: 60px;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+}
+.alignment {
+    transform: translate(125%, 25%);
+}

@@ -93,7 +93,7 @@
                 &::after {
                     display: block;
                     width: fit-content;
-                    animation: underline 0.6s linear forwards;
+                    animation: underline 0.6s ease-in-out forwards;
                 }
             }
         }
