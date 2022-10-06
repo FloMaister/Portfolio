@@ -4,7 +4,7 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 400px 600px;
-        grid-template-rows: 280px 280px;
+        grid-template-rows: 250px 250px;
         column-gap: 70px;
         row-gap: 40px;
     }
@@ -13,6 +13,9 @@
         grid-row: 0 / 3;
     }
     &__aboutme {
+        .divider {
+            margin: 0;
+        }
         &__title {
             position: relative;
             font-weight: 700;
@@ -24,11 +27,6 @@
             font-weight: 700;
             font-size: 36px;
             line-height: 60px;
-        }
-        &__divider {
-            width: 60px;
-            border: 2px solid #FFA501;
-            background-color: $main-color;
         }
         &__descr {
             padding-top: 20px;
@@ -72,5 +70,7 @@
     }
 }
 .alignment {
-    transform: translate(125%, 25%);
+    img {
+        transform: translate(125%, 25%);
+    }
 }
