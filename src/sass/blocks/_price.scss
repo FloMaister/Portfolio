@@ -5,7 +5,7 @@
         display: grid;
         grid-template-columns: repeat(2, 365px);
         grid-template-rows: repeat(3, 45px);
-        grid-auto-rows: 45px;
+        grid-auto-rows: minmax(45px, auto);
         column-gap: 305px;
         row-gap: 20px;
         padding-left: 50px;

@@ -5,7 +5,7 @@
         padding: 0 35px 0 50px;
         display: grid;
         grid-template-columns: 400px 585px;
-        justify-content: space-between;
+        column-gap: 70px;
     }
     &__photo {
         img {
@@ -46,9 +46,9 @@
     &__form {
         margin-top: 30px;
         display: grid;
-        grid-template: 45px 190px 45px / 280px 280px;
+        grid-template: 45px 190px 45px / repeat(2, 280px);
         justify-content: space-between;
-        row-gap: 28px;
+        row-gap: 30px;
         label {
             display: block;
             position: absolute;
