@@ -1,11 +1,35 @@
 .btn {
+    position: relative;
     height: 45px;
     background: $main-color;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     padding: 10px 25px;
+    overflow: hidden;
     &_invisible {
         background: none;
         box-shadow: none;
         white-space: pre;
     }
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 1.5em;
+        height: 100%;
+        background-color: rgba(#fff, 0.6);
+        transform: translateX(-4em) skewX(-45deg);
+    }
+    &:hover {
+        &:before {
+            animation: move-light 0.6s;
+        }
+    }
+    &_longer {
+        &:hover {
+            &:before {
+                animation: move-light-longer 1s;
+            }
+        } 
+    } 
 }
